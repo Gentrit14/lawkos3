@@ -1,7 +1,6 @@
 import React from 'react';
 import './PracticeAreas.scss';
 import { practiceAreasData } from './practiceAreasData';
-import  MySVG  from '../img/Landing@2x2-Photoroom.png';
 
 const PracticeAreas = () => {
     return (
@@ -9,7 +8,6 @@ const PracticeAreas = () => {
             <div className="container">
                 <div className="container2">
                 <h2>Our practice area</h2>
-                <MySVG />
                 </div>
                 <div className="practice-area-grid">
                     {practiceAreasData.map((area, index) => (
