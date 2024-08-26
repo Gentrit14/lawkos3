@@ -1,0 +1,91 @@
+.practice-areas {
+    padding: 50px 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+
+    .container {
+        max-width: 1300px;
+        margin: 20px auto;
+        padding: 50px 50px;
+    }
+
+    .container2 {
+        display: flex;
+        justify-content: space-between; /* Aligns items on opposite sides */
+        align-items: center; /* Vertically center the heading and button */
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 60px;
+        font-weight: 400;
+        text-align: left;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 20px;
+        &:after {
+            content: '';
+            display: block;
+            width: 130px;
+            height: 2px;
+            background-color: var(--body-color);
+            margin: 15px 0;
+          }
+    }
+
+    .practice-area-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .practice-area {
+        text-align: left;
+
+        .icon {
+            font-size: 60px;
+            color: #a87f4d;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            width: 80%;
+            font-weight: 400;
+            color: var(--p-color);
+            line-height: 1.6;
+        }
+    }
+
+    .view-all-areas {
+        display: inline-block;
+        font-size: 18px;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        border: 2px solid var(--body-color);
+        background-color: transparent;
+        color: var(--body-color);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            font-size: 20px;
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover svg {
+            transform: translateX(5px);
+        }
+    }
+}
